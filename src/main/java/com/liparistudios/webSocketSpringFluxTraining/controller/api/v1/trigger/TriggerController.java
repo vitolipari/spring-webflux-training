@@ -14,7 +14,7 @@ import java.util.Map;
 public class TriggerController extends BaseAPIController {
 
 
-    @PostMapping("/check-instagram")
+    @PostMapping("/action")
     public @ResponseBody
     ResponseEntity<Map<String, Object>> checkInstagramUsername( @RequestBody String request ) throws IOException {
 
