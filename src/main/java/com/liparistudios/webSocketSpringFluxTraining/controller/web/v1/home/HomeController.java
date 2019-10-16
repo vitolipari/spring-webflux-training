@@ -23,6 +23,8 @@ public class HomeController extends BaseWebController {
 
         try {
 
+            System.out.println("request to Home");
+
             Pattern androidPattern          = Pattern.compile(ANDROID_USER_AGENT_REGEX);
             Pattern iPhonePattern           = Pattern.compile(IPHONE_USER_AGENT_REGEX);
             Pattern mobilePattern           = Pattern.compile(MOBILE_USER_AGENT_REGEX_LOWERCASE);
