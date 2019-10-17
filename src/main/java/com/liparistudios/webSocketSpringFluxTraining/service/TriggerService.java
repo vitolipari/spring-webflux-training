@@ -25,10 +25,6 @@ public class TriggerService {
 
     /**
      * Send message to clients are listening in speficic channel
-     *
-     * TODO
-     *
-     * @param channel
      */
     public void broadcastEmitNotific() {
 
