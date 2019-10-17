@@ -26,8 +26,9 @@ public class TriggerController extends BaseAPIController {
         System.out.println(request);
 
 //        Map requestMap = objectMapper.readValue(request, Map.class);
+//          request.get("channel").toString()
 
-        triggerService.emitNotific( request.get("channel").toString() );
+        triggerService.broadcastEmitNotific();
 
         Map<String, Object> userDataResponseMap = new HashMap<String, Object>(){{
             put("status", "ok");
