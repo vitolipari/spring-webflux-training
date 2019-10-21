@@ -16,6 +16,22 @@ public class WebSocketConfig implements WebSocketConfigurer {
 
     @Override
     public void registerWebSocketHandlers(WebSocketHandlerRegistry registry) {
-        registry.addHandler(myWebSocketHandler, "/socketHandler/{channel}");
+        // canale 1
+        registry
+            .addHandler(myWebSocketHandler, "/socketHandler/{channel}")
+            .setAllowedOrigins("*")
+        ;
+
+        // canale 2
+//        registry
+//            .addHandler(myWebSocketHandler, "/socketHandler/{channel}")
+//            .setAllowedOrigins("*");
+//        ;
+
+
     }
+
+
+
+
 }
